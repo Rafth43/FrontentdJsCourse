@@ -41,7 +41,7 @@ document.write('<br>');
 
 /*
 NOTA: para ver los caracteres especifico de una cadena de caracteres podemos
-utilizar también la función substring() cumplen practicamente la misma funcion
+utilizar también la función substring() cumplen prácticamente la misma función
 pero teniendo en cuenta que substring() devuelve un subconjunto de un objeto 
 String y slice() extrae una sección de una cadena y devuelve una cadena nueva.
 
@@ -53,15 +53,44 @@ document.write('<br>');
 document.write('<br>');
 
 /*
-NOTA: con las funciones de Js podremos cambiar también los valores de una cadena
-de caracteres con la función de replace() esta función lo que hace es remplazar
-una cadena de caracteres por otra
+NOTA: con las funciones de Js podremos cambiar o reemplazar los valores de una 
+cadena de caracteres con la función de replace() esta función lo que hace es 
+remplazar una cadena de caracteres por otra
 
 replace(palabraExistente,palabraCambiar);
+
+También si queremos hacer que los caracteres de una cadena de caracteres cambie 
+a mayúsculas podremos utilizar la función toUpperCase() la cual transforma todos
+los valores de la cadena en mayúsculas.
+
+toUpperCase(palabraEnMinuscula);
+
+También si queremos hacer que los caracteres de una cadena de caracteres cambie 
+a mayúsculas podremos utilizar la función toLowerCase() la cual transforma todos
+los valores de la cadena en mayúsculas.
+
+toUpperCase(palabraEnMinuscula);
 */
 let nuevaPalabra = '¿Hola como estas?'
 
 document.write(nuevaPalabra);
 document.write('<br>');
 document.write('cambiar la palabra hola por JavaScript: '+ nuevaPalabra.replace('Hola','Javascript'));
+document.write('<br>');
+document.write('<br>');
+
+let palabraminusculas = '¿hola como estas?'
+document.write(palabraminusculas);
+document.write('<br>');
+//cambiar a mayusculas
+document.write('cambiar la palabra a mayúsculas: '+ palabraminusculas.toUpperCase());
+document.write('<br>');
+document.write('<br>');
+
+let palabramayusculas = '¿HOLA COMO ESTAS?'
+document.write(palabramayusculas);
+document.write('<br>');
+//cambiar a minisculas
+document.write('cambiar la palabra a minúsculas: '+ palabramayusculas.toLowerCase());
+document.write('<br>');
 document.write('<br>');
