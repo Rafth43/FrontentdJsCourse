@@ -46,6 +46,8 @@ pero teniendo en cuenta que substring() devuelve un subconjunto de un objeto
 String y slice() extrae una sección de una cadena y devuelve una cadena nueva.
 
 substring(desde,hasta);
+
+Por ejemplo:
 */
 
 document.write('las primeras 4 letras de la palabra son: '+ palabra.substring(0,4));
@@ -70,6 +72,8 @@ a mayúsculas podremos utilizar la función toLowerCase() la cual transforma tod
 los valores de la cadena en mayúsculas.
 
 toUpperCase(palabraEnMinuscula);
+
+Por ejemplo:
 */
 let nuevaPalabra = '¿Hola como estas?'
 
@@ -94,3 +98,49 @@ document.write('<br>');
 document.write('cambiar la palabra a minúsculas: '+ palabramayusculas.toLowerCase());
 document.write('<br>');
 document.write('<br>');
+
+/*
+NOTA: Si queremos quitar espacios de una cadena de text podemos utilizar la
+función trim donde existen varias formas de quitar los espacios su puede 
+utilizar:
+
+trim(); para quitar los espacios existentes
+
+trimStart(); para quitar los espacios del inicio
+
+trimEnd(); para quitar los espacios del final
+
+para utilizar esta función debemos asignársela a una variable para que pueda
+borrar los espacios que se le indiquen dentro de la función.
+
+Por ejemplo:
+*/
+let quitarEsoacios = ' Aquí existe un espacio ';
+console.log(quitarEsoacios);
+console.log(quitarEsoacios.trim());
+
+//Quitar espacio del inicio
+let quitarEspaciosIni = ' <-Aquí existe un espacio';
+console.log(quitarEspaciosIni);
+console.log(quitarEspaciosIni.trimStart());
+
+//Quitar espacio del final
+let quitarEspaciosFin = 'Aquí existe un espacio-> ';
+console.log(quitarEspaciosFin);
+console.log(quitarEspaciosFin.trimEnd());
+
+/*
+NOTA: Si queremos quitar o sustraer palabras dentro de una cadena de caracteres
+utilizaremos a función split(palabra que quitaras); esta función luego de quitar
+la palabra colocara una coma (,)
+
+para utilizar esta función debemos asignársela a una variable para que pueda
+borrar las palabras que se le indiquen dentro de la función.
+
+Por ejemplo:
+*/
+
+let quitarPalabra = 'Aquí existe una palabra-> hola';
+document.write(quitarPalabra);
+document.write('<br>');
+document.write('sustraer la palabra "hola": '+quitarPalabra.split('hola'));
