@@ -106,11 +106,54 @@ el programa acabará y dirá la cantidad de números pares ingresados
 (el 0 cuenta como par).
 */
 
-let valor = 0;
+/* let valor = 0;
 let valores = [] ,i= 0;
 while (valor % 2 == 0) {
     valor = prompt('Ingrese otro numero par');
     valores.push(valor)
 }
 valores.pop();
-document.write('la cantidad de números pares ingresados es de: '+valores.length);
+document.write('la cantidad de números pares ingresados es de: '+valores.length);  */
+
+/*
+Este script muestra un menu de opciones: 1- Leer datos. 2- Mostrar 
+datos 3- Fin. El usuario deberá teclear uno de ellos y el programa 
+mostrará la opción elegida. Si teclea un valor fuera del menu se mos-
+trará un mensaje de error y se vuelve a pedir un número de opción. El 
+programa finaliza al teclear el 3.
+*/
+
+/* let menu = prompt(['1- Leer datos. 2- Mostrar datos 3- Fin. ']);
+
+while (menu < 0 || menu > 3) {
+    alert('Error de selección');
+    menu = prompt('Seleccione una opción valida del menu'+['1- Leer datos. 2- Mostrar datos 3- Fin. ']);
+}
+if (menu == 1 ) {
+    alert(' la opción elegida es: Leer datos');
+} else if (menu == 2) {
+    alert(' la opción elegida es: Mostrar datos');
+} else if (menu == 3){
+    alert(' la opción elegida es: Fin');
+}
+ */
+
+/*
+Un script pedirá al usuario que vaya tecleando números de manera repe-
+tida. cuando pulse 0, el programa muestra "La suma es " seguido de la 
+suma de los números. Si esta suma es par el programa se repite y si es 
+impar el programa acaba.
+*/
+let valor = 0, sumatoria = 0;
+    valor = parseInt(prompt('Ingrese un numero'));
+while (valor != 0) {
+    valor = parseInt(prompt('Ingrese un numero'));
+    sumatoria += valor 
+    if (sumatoria % 2 == 0) {
+        alert('La suma es '+sumatoria);
+    
+    } else {
+        alert('La suma es '+sumatoria);
+    }
+}
+
